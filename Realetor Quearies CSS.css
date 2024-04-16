@@ -37,6 +37,20 @@
     .footer-text {
         font-size: 20px;
     }
+    .facebook-container {
+        padding: 70px 400px;
+    }
+
+    .facebook-text {
+        font-size: 50px;
+    }
+    
+    
+    .facebook-icon{
+        height: 80px;
+        width: 80px;
+    }
+
 }
 
 @media screen and (max-width: 2000px) {
@@ -69,6 +83,20 @@
 
     .gallery-container {
         height: 600px;
+    }
+
+    .facebook-container {
+        padding: 60px 300px;
+    }
+
+    .facebook-text {
+        font-size: 45px;
+    }
+    
+    
+    .facebook-icon{
+        height: 75px;
+        width: 75px;
     }
 }
 
@@ -106,6 +134,36 @@
 
     .footer-text {
         font-size: 18px;
+    }
+
+    .facebook-container {
+        padding: 50px 170px;
+    }
+
+    .facebook-text {
+        font-size: 38px;
+    }
+    
+    
+    .facebook-icon{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .facebook-container {
+        padding: 50px 100px;
+    }
+
+    .facebook-text {
+        font-size: 30px;
+    }
+    
+    
+    .facebook-icon{
+        height: 60px;
+        width: 60px;
     }
 }
 
@@ -160,6 +218,22 @@
 
     .header {
         padding: 2px 150px 2px 150px;
+    }
+
+ 
+}
+
+@media screen and (max-width: 1150px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-column:first-child {
+        margin-bottom: 10px;
     }
 }
 
@@ -270,11 +344,17 @@
     .main-nav {
         display: none;
     }
+    .facebook-text{
+        font-size: 28px;
 }
 
 @media screen and (max-width: 750px) {
     .header {
         padding: 2px 30px 2px 30px;
+    }
+
+    .facebook-container {
+        padding: 20px 50px;
     }
 }
 
@@ -313,12 +393,21 @@
     }
 }
 
+@media screen and (max-width: 580px) {
+    .facebook-text{
+        font-size: 20px;
+
+    }
+}
+
 @media screen and (max-width: 500px) {
 	.disappear {
 		width: auto;
 		height: 300px;
 	}
 }
+
+
 
 @media screen and (max-width: 450px) {
 	.footer-container {
@@ -386,7 +475,11 @@
 	.footer-text {
 		font-size: 14px;
 	}
+    .facebook-container{
+        padding: 20px 20px;
+    }
 }
+
 
 @media screen and (max-width: 300px) {
 	.disappear {

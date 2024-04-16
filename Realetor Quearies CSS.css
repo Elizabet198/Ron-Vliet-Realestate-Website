@@ -38,17 +38,17 @@
         font-size: 20px;
     }
     .facebook-container {
-        padding: 70px 400px;
+        padding: 70px 300px;
     }
 
     .facebook-text {
-        font-size: 50px;
+        font-size: 70px;
     }
     
     
     .facebook-icon{
-        height: 80px;
-        width: 80px;
+        height: 90px;
+        width: 90px;
     }
 
 }
@@ -153,7 +153,7 @@
 
 @media screen and (max-width: 1350px) {
     .facebook-container {
-        padding: 50px 100px;
+        padding: 50px 200px;
     }
 
     .facebook-text {
@@ -219,7 +219,9 @@
     .header {
         padding: 2px 150px 2px 150px;
     }
-
+    .facebook-container {
+        padding: 50px 150px;
+    }
  
 }
 
@@ -305,17 +307,21 @@
     .text-area {
         height: 45px;
     }
+
+    .facebook-container{
+        .facebook-container {
+            padding: 50px 90px;
+        } 
+    }
 }
 
 @media screen and (max-width: 900px) {
     .main-nav-list {
         display: none;
-        /* Hide main navigation on larger screens */
     }
 
     .header {
         padding: 10px 20px;
-        /* Adjust padding for smaller screens */
     }
 
     .hamburger-menu {
@@ -326,17 +332,12 @@
 @media screen and (max-width: 850px) {
     .footer-container {
         display: flex;
-        /* Make the container a flexbox */
         justify-content: space-between;
-        /* Distribute content horizontally */
         align-items: center;
-        /* Align content vertically */
     }
 
     .footer-container p:first-child {
-        /* Style the first paragraph */
         margin: 0;
-        /* Remove default margins for better layout */
     }
 }
 
@@ -344,8 +345,10 @@
     .main-nav {
         display: none;
     }
-    .facebook-text{
+
+    .facebook-text {
         font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -406,8 +409,6 @@
 		height: 300px;
 	}
 }
-
-
 
 @media screen and (max-width: 450px) {
 	.footer-container {

@@ -313,6 +313,37 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .footer-text:last-child {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-text:last-child {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-text:last-child {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-text:last-child {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-text:last-child {
+        font-size: 8px;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     .main-nav-list {
         display: none;
@@ -391,6 +422,12 @@
 	.image-of-me {
         max-width: 768px;
         max-height: 768px;
+    }
+
+    .home-overlay-text {
+		margin-top: 40px;
+		padding: 0;
+        font-size: 15px
     }
 }
 

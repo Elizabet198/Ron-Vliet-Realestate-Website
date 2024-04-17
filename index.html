@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Realetor Website</title>
+    <title>MyConnecticutHomeSearch</title>
     <link href="Realetor Quearies CSS.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link href="Realetor CSS.css" rel="stylesheet" type="text/css">
-    <link href="Realetor Quearies CSS.css" rel="stylesheet" type="text/css">
+    <link href="Realetor.css" rel="stylesheet" type="text/css">
+    <link href="Realetor Quearies.css" rel="stylesheet" type="text/css">
     <script defer src="Realetor JavaScript.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/b25a2744d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -32,15 +33,13 @@
           </ul>
         </nav>
         <button class="hamburger-menu">
-          <span class="hamburger-menu-line"></span>
-          <span class="hamburger-menu-line"></span>
-          <span class="hamburger-menu-line"></span>
+          <i class="fa-solid fa-bars fa-2xl"></i>
         </button>
       </header>
       <script>
-        const nav = document.querySelector(".header"); // Select the navigation element
+        const nav = document.querySelector(".header");
         window.addEventListener("scroll", function() {
-          const sticky = window.pageYOffset > 0; // Check if scrolled past the top
+          const sticky = window.pageYOffset > 0;
           nav.classList.toggle("sticky", sticky);
         });
       </script>

@@ -122,8 +122,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10; /* Ensure menu stays on top */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow for sticky behavior */
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -135,8 +135,8 @@ body {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
 }
 
 .main-nav-link:link,
@@ -157,7 +157,7 @@ body {
 /* Hamburger Menu */
 
 .hamburger-menu {
-    display: none; /* Initially hide on larger screens */
+    display: none;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -167,10 +167,10 @@ body {
     background: none;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 11; /* Ensure button stays above other elements */
+    z-index: 11;
 }
 
-.hamburger-menu-line {
+/* .hamburger-menu-line {
     display: block;
     background-color: #333;
     height: 15%;
@@ -184,27 +184,27 @@ body {
 
 .hamburger-menu.active .hamburger-menu-line:last-child {
     transform: rotate(-45deg) translate(-5px, 5px);
-}
+} */
 
 /*Home*/
 
 .home-image-container {
-    position: relative; /* This allows us to position the overlay text absolutely */
+    position: relative;
 }
 
 .home-image-container img {
     display: block;
-    width: 100%; /* Ensures the image fills the container width */
-    height: auto; /* Maintains image aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .home-overlay-text {
     position: absolute;
     top: 20%;
     left: 40%;
-    color: #003035;  /* Adjust as needed */
-    padding: 20px 30px; /* Add some padding for aesthetics */
-    text-align: center; /* Center text horizontally */
+    color: #003035;
+    padding: 20px 30px;
+    text-align: center;
     font-size: 35px;
     font-weight: 900;
     font-family: Dancing Script;

@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MyConnecticutHomeSearch</title>
-    <link href="Realtor Media Queries.css" rel="stylesheet">
     <link href="Realtor.css" rel="stylesheet">
+    <link href="Realtor Media Queries.css" rel="stylesheet">
     <script src="Realtor.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/b25a2744d8.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
   <main>
@@ -42,6 +41,37 @@
           nav.classList.toggle("sticky", sticky);
         });
       </script>
+
+      <section class="mobile-navigation">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+              <a href="#logo"></a>
+              <img src="Logo/Logo.png" class="logo" alt="Realetor Logo">
+        
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+              <a href="#About Me">About Me</a>
+              <a href="#Gallery">Gallery</a>
+              <a href="#Facebook">Facebook</a>
+              <a href="#Contact me">Contact me</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+              </a>
+          </div>
+          <script>
+          function myFunction() {
+              var x = document.getElementById("myLinks");
+
+              if (x.style.display === "block") {
+                  x.style.display = "none";
+              } else {
+                  x.style.display = "block";
+              }
+          }
+          </script>
+      </section>
       <section class="section-home" id="Home">
         <div class="home-image-container">
           <img src="Houses/Home/Home page pic.PNG" alt="Beautiful white home with a blue sky in the background">
@@ -125,7 +155,7 @@
             <img src="Sign Up Pictures/portrait_placeholder.png" alt="Sign Up Image">
           </div>
           <div class="form-holder">
-            <form action="#" method="post">
+            <form onsubmit="sendEmail()">
               <h1 class="sign-up-heding">Contact Me</h1>
               <div class="form-group">
                 <label class="lable" for="firstName">First Name:</label>
@@ -147,8 +177,24 @@
                 <label class="lable" for="message">Message (Optional - 500 characters):</label>
                 <textarea class="text-area" id="message" name="message" maxlength="500"></textarea>
               </div>
-              <button class="submit-button" type="submit">Submit</button>
+              <button class="submit-button" type="submit" onclick="">Submit</button>
             </form>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+              function sendEmail() {
+                  Email.send({
+                      Host : "smtp.elasticemail.com",
+                      Username : "username",
+                      Password : "password",
+                      To : 'them@website.com',
+                      From : "you@isp.com",
+                      Subject : "This is the subject",
+                      Body : "And this is the body"
+                  }).then(
+                    message => alert(message)
+                  );
+              }
+            </script>
           </div>
         </div>
       </section>

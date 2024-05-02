@@ -341,7 +341,7 @@
 }
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
     .main-nav-list {
         display: none;
     }
@@ -353,7 +353,17 @@
     .hamburger-menu {
         display: block;
     }
-}
+} */
+
+@media (max-width: 900px) {
+    .header {
+      display: none;
+    }
+    
+    .mobile-navigation{
+      display: block;
+    }
+  }
 
 @media screen and (max-width: 850px) {
     .footer-container {

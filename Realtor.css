@@ -151,6 +151,10 @@ body {
     color: #29abe2;
 }
 
+.mobile-navigation{
+    display: none;
+}
+
 /* Hamburger Menu */
 
 .hamburger-menu {
@@ -167,7 +171,7 @@ body {
     z-index: 11;
 }
 
-/* .hamburger-menu-line {
+.hamburger-menu-line {
     display: block;
     background-color: #333;
     height: 15%;
@@ -181,7 +185,7 @@ body {
 
 .hamburger-menu.active .hamburger-menu-line:last-child {
     transform: rotate(-45deg) translate(-5px, 5px);
-} */
+}
 
 /*Home*/
 

@@ -1,343 +1,534 @@
-@charset "utf-8";
-/* CSS Document */
+@media screen and (max-width: 2550px) {
+    .home-overlay-text {
+        font-size: 55px;
+    }
 
-@media (max-width: 2560px){
-	.home-overlay-text {
-		font-size: 55px;
-	}
-	
+    .me-p-text {
+        font-size: 25px;
+    }
 
-	.me-p-text{
-		font-size: 30px;
-	}
-	
-	.main-nav-link:link, 
-.main-nav-link:visited{
-	font-weight: 640;
-	font-size: 27px;
-	}
-	
-	.header {
-		  padding: 3px 200px 3px 200px;
-		  height: 165px;
-	}
-	
-	.logo {
-		height: 150px;
-		width: 150px;
-	}
-	
-	.sign-up-container {
-		width: 1000px;
-	}
-	
-	.gallery-container {
-		height: 700px; 
-	}
-	
-	.footer-text{
-		font-size: 35px;
-	}
-	
-}
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-weight: 640;
+        font-size: 27px;
+    }
 
+    .header {
+        padding: 3px 200px 3px 200px;
+        height: 165px;
+    }
 
-@media (max-width: 2000px){
-	
-	.home-overlay-text {
-		font-size: 30px
-	}
-	
-	
-	.me-p-text{
-		font-size: 25px;
-	}
-	
-	.main-nav-link:link, 
-	.main-nav-link:visited{
-	font-weight: 550;
-	font-size: 24px;
-	}
-	
-	.header {
-		  height: 90px;
-	}
-	
-	.logo {
-		width: 85px;
-		height: 85px;
-	}
-	
-	
-	.sign-up-container {
-		width: 950px;
-	}
-	
-	.gallery-container {
-		height: 600px; }
-	
-}
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
 
-@media (max-width: 1500px){
-	
-	.home-overlay-text {
-		font-size: 28px
-	}
-	
-	
-	.me-p-text{
-		font-size: 15px;
-	}
-	
-	.main-nav-link:link, 
-.main-nav-link:visited{
-	font-weight: 550;
-	font-size: 20px;
-	}
-	
-		.header {
-		  height: 90px;
-	}
-	
-	.logo {
-		width: 85px;
-		height: 85px;
-	}
-	
-	
-	.sign-up-container {
-		width: 750px;
-	}
-	
-	.gallery-container {
-		height: 550px; }
-	
-		.footer-text{
-			font-size: 18px;
-		}
-}
+    .sign-up-container {
+        width: 1000px;
+    }
 
+    .gallery-container {
+        height: 700px;
+    }
 
-	
+    .footer-text {
+        font-size: 20px;
+    }
+    .facebook-container {
+        padding: 70px 300px;
+    }
 
-@media (max-width: 1250px){
-	 
-	.grid--2--cols{
-		grid-template-columns: 1fr;
-
-	}
-	
-	
-	.about-me{
-	grid-template-columns: 1fr;
-}
-	
-	.dissapere{
-		display: block;
-		margin: auto;
-	}
-	
-	.image-of-me{
-		display: none;
-	}
-	
-	.me-p-text{
-		font-size: 20px;
-	}
-	
-	.gallery-container {
-		height: 450px; }
-	
-	.home-overlay-text {
-		font-size: 25px
-	}
-	
-	.sign-up{
-		  padding: 30px;
-	}
-	
-	.header {
-		  height: 90px;
-	}
-	
-	.logo {
-		width: 85px;
-		height: 85px;
-	}
-	
-.main-nav-link:link, 
-.main-nav-link:visited {
-		font-weight: 500;
-		font-size: 18px;
-	}
-	
-	.header {
-		padding: 2px 150px 2px 150px;
-	}
-}
-
-@media (max-width: 1000px) {
-	.header{
-		padding: 2px 90px 2px 90px;
-	}
-	
-	.gallery-container {
-		height: 350px; 
-	}
-	
-	
-	.text-area {
-  		height: 90px;
-  		resize: auto;
-	}
-	
-	.header {
-		height: 85px;
-	}
-	
-	.logo {
-		width: 80px;
-		height: 80px;
-	}
-	
-	.home-overlay-text {
-		font-size: 24px
-	}
-	
-	.me-p-text {
-		font-size: 16px;
-	}
-	
-
-.sign-up-container {
-  width: 700px;
-  height: 480px;
-}
-
-.image-holder {
-display: none;
-}
-
-.image-holder img {
- display: none;
-}
-
-
-.sign-up-heding {
-  text-align: center;
-  margin-bottom: 20px;
-}
-	
-.label {
- font-size: 10px;
-}
-
-.input{
-	padding: 8px;
-	}
-	
-	.sign-up-heding{
-		font-size: 20px;
-	}
-	
-.text-area {
- font-size: 13px;
-}
-
-.text-area {
-  height: 45px;
-}
-
-	
-}
-
-@media (max-width: 900px) {
-  .header {
-	display: none;
-  }
-  .mobile-navigation{
-	display: block;
-  }
-}
-
-@media (max-width: 850px) {
-	
-	
- .footer-container {
-    display: flex; /* Make the container a flexbox */
-    justify-content: space-between; /* Distribute content horizontally */
-    align-items: center; /* Align content vertically */
-  }
-
-  .footer-container p:first-child { /* Style the first paragraph */
-    margin: 0; /* Remove default margins for better layout */
-  }
-}
-
-@media (max-width: 750px) {
-	
-	.header{
-		padding: 2px 30px 2px 30px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-  .main-nav {
-	  display: none;
-	}
+    .facebook-text {
+        font-size: 70px;
+    }
+    
+    
+    .facebook-icon{
+        height: 90px;
+        width: 90px;
+    }
 
 }
+
+@media screen and (max-width: 2000px) {
+    .home-overlay-text {
+        font-size: 30px
+    }
+
+    .me-p-text {
+        font-size: 25px;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-weight: 550;
+        font-size: 24px;
+    }
+
+    .header {
+        height: 90px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .sign-up-container {
+        width: 950px;
+    }
+
+    .gallery-container {
+        height: 600px;
+    }
+
+    .facebook-container {
+        padding: 60px 300px;
+    }
+
+    .facebook-text {
+        font-size: 45px;
+    }
+    
+    
+    .facebook-icon{
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .home-overlay-text {
+        font-size: 28px
+    }
+
+    .me-p-text {
+        font-size: 15px;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-weight: 550;
+        font-size: 20px;
+    }
+
+    .header {
+        height: 90px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .sign-up-container {
+        width: 750px;
+    }
+
+    .gallery-container {
+        height: 550px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .facebook-container {
+        padding: 50px 170px;
+    }
+
+    .facebook-text {
+        font-size: 38px;
+    }
+    
+    
+    .facebook-icon{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .facebook-container {
+        padding: 50px 200px;
+    }
+
+    .facebook-text {
+        font-size: 30px;
+    }
+    
+    
+    .facebook-icon{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .grid--2--cols {
+        grid-template-columns: 1fr;
+    }
+
+    .about-me {
+        grid-template-columns: 1fr;
+    }
+
+    .disappear {
+        display: block;
+        margin: auto;
+    }
+
+    .image-of-me {
+        display: none;
+    }
+
+    .me-p-text {
+        font-size: 20px;
+    }
+
+    .gallery-container {
+        height: 450px;
+    }
+
+    .home-overlay-text {
+        font-size: 25px
+    }
+
+    .sign-up {
+        padding: 30px;
+    }
+
+    .header {
+        height: 90px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .header {
+        padding: 2px 150px 2px 150px;
+    }
+    .facebook-container {
+        padding: 50px 150px;
+    }
+ 
+}
+
+@media screen and (max-width: 1150px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-column:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding: 2px 90px 2px 90px;
+    }
+
+    .gallery-container {
+        height: 350px;
+    }
+
+    .text-area {
+        height: 90px;
+        resize: auto;
+    }
+
+    .header {
+        height: 85px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .home-overlay-text {
+        font-size: 24px
+    }
+
+    .me-p-text {
+        font-size: 16px;
+    }
+
+    .sign-up-container {
+        width: 700px;
+        height: 480px;
+    }
+
+    .image-holder {
+        display: none;
+    }
+
+    .image-holder img {
+        display: none;
+    }
+
+    .sign-up-heding {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+
+    .input {
+        padding: 8px;
+    }
+
+    .sign-up-heding {
+        font-size: 20px;
+    }
+
+    .text-area {
+        font-size: 13px;
+    }
+
+    .text-area {
+        height: 45px;
+    }
+
+    .facebook-container {
+        padding: 50px 90px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-text:last-child {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 700px) {
-
-	
-	.home-overlay-text {
-		font-size: 20px
-	}
-}
-
-@media screen and (max-width: 690px) {
-	.gallery-container {
-    	height: unset;  /* Remove fixed height on smaller screens */
-  	}
-	
-	.image-row {
-  margin-bottom: 5px;  /* Add some spacing between rows */
-}
+    .footer-text:last-child {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .footer-text:last-child {
+        font-size: 12px;
+    }
+}
 
-	.image-of-me{
-		width: 20px;
-		max-height: 20px;
-	}
-	
-	.me-p-text{
-		font-size: 15px;
-	}
-
-	.about-me{
-		padding: 0;
-
-	}
-		.container {
-			padding: 0 7px;
-		}
+@media screen and (max-width: 550px) {
+    .footer-text:last-child {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 500px) {
+    .footer-text:last-child {
+        font-size: 8px;
+    }
+}
 
-	.image-of-me{
-		max-width: 768px;
-		height: 768px;
+
+@media screen and (max-width: 900px) {
+    .main-nav-list {
+        display: none;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-container p:first-child {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .main-nav {
+        display: none;
+    }
+
+    .facebook-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding: 2px 30px 2px 30px;
+    }
+
+    .facebook-container {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gallery-container {
+        height: unset;
+        /* Remove fixed height on smaller screens */
+    }
+
+    .image-row {
+        margin-bottom: 5px;
+        /* Add some spacing between rows */
+    }
+
+	.home-overlay-text {
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width: 650px) {
+	.disappear {
+		width: auto;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.disappear {
+		width: auto;
+		height: 350px;
+	}
+
+	.image-of-me {
+        max-width: 768px;
+        max-height: 768px;
+    }
+
+    .home-overlay-text {
+		margin-top: 40px;
+		padding: 0;
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .facebook-text{
+        font-size: 20px;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+	.disappear {
+		width: auto;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#footer-text-first-child {
+		margin-bottom: 10px;
+	}
+
+	.footer-text {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.disappear {
+		width: auto;
+		height: 250px;
+	}
+
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-text {
+		font-size: 16px;
+	}
+	
+	#footer-text-first-child {
+		margin-bottom: 10px;
 	}
 
 	.home-overlay-text {
-		font-size: 15px
+		margin-top: 50px;
+		padding: 0;
+        font-size: 15px
+    }
+
+	.form-holder {
+		padding: 25px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.disappear {
+		width: auto;
+		height: 200px;
 	}
 
-	.me-p-text{
-		font-size: 13px;
+	.heading-primary {
+		font-size: 30px;
+	}
 
+	label {
+		font-size: 14px;
+	}
+
+	.footer-text {
+		font-size: 14px;
+	}
+    .facebook-container{
+        padding: 20px 20px;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+	.disappear {
+		width: auto;
+		height: 100px;
+	}
+
+	.heading-primary {
+		font-size: 20px;
+	}
+
+	label {
+		font-size: 12px;
+	}
+
+	.footer-text {
+		font-size: 12px;
 	}
 }

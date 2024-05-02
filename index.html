@@ -30,9 +30,6 @@
             <li><a class="main-nav-link" href="#Contact-me">Contact Me</a></li>
           </ul>
         </nav>
-        <button class="hamburger-menu">
-          <i class="fa-solid fa-bars fa-2xl"></i>
-        </button>
       </header>
       <script>
         const nav = document.querySelector(".header");
@@ -42,35 +39,58 @@
         });
       </script>
 
-      <section class="mobile-navigation">
-          <!-- Top Navigation Menu -->
-          <div class="topnav">
-              <a href="#logo"></a>
-              <img src="Logo/Logo.png" class="logo" alt="Realetor Logo">
-        
-          <!-- Navigation links (hidden by default) -->
-          <div id="myLinks">
-              <a href="#About Me">About Me</a>
-              <a href="#Gallery">Gallery</a>
-              <a href="#Facebook">Facebook</a>
-              <a href="#Contact me">Contact me</a>
-          </div>
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-              </a>
-          </div>
-          <script>
-          function myFunction() {
-              var x = document.getElementById("myLinks");
+<section class="mobile-navigation">
+	<!-- Top Navigation Menu -->
+<div class="topnav">
+  <img src="Logo/Logo.png" class="logo" alt="Realetor Logo">
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#About Me" id="about-me">About Me</a>
+    <a href="#Gallery" id="gallery">Gallery</a>
+    <a href="#Facebook" id="facebook">Facebook</a>
+	  <a href="#Contact me" id="contact-me">Contact me</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	<script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
 
-              if (x.style.display === "block") {
-                  x.style.display = "none";
-              } else {
-                  x.style.display = "block";
-              }
-          }
-          </script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  // Get the mobile navigation section
+  const mobileNavigation = document.querySelector('.mobile-navigation');
+
+  // Add event listener for scroll
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+
+    // Add 'sticky' class to mobile-navigation if scrolled past a certain point
+    if (scrollPosition > 50) { // You can adjust this value to control the sticky trigger point
+      mobileNavigation.classList.add('sticky');
+    } else {
+      mobileNavigation.classList.remove('sticky');
+    }
+  });
+</script>
+
+	</section>
       </section>
       <section class="section-home" id="Home">
         <div class="home-image-container">
@@ -177,7 +197,7 @@
                 <label class="lable" for="message">Message (Optional - 500 characters):</label>
                 <textarea class="text-area" id="message" name="message" maxlength="500"></textarea>
               </div>
-              <button class="submit-button" type="submit" onclick="">Submit</button>
+              <button class="submit-button" type="submit">Submit</button>
             </form>
             <script src="https://smtpjs.com/v3/smtp.js"></script>
             <script>

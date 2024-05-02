@@ -151,40 +151,70 @@ body {
     color: #29abe2;
 }
 
-.mobile-navigation{
-    display: none;
-}
-
 /* Hamburger Menu */
-
-.hamburger-menu {
-    display: none;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    border: none;
-    background: none;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 11;
+.logo {
+    height: 50px;
+    padding: 3px;
 }
 
-.hamburger-menu-line {
-    display: block;
-    background-color: #333;
-    height: 15%;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
+.mobile-navigation{
+	display: none;
+    background-color: white;
+
 }
 
-.hamburger-menu.active .hamburger-menu-line:first-child {
-    transform: rotate(45deg) translate(-5px, -5px);
+.topnav {
+  overflow: hidden;
+  position: relative;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-.hamburger-menu.active .hamburger-menu-line:last-child {
-    transform: rotate(-45deg) translate(-5px, 5px);
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.mobile-navigation.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure the sticky nav bar stays on top */
+  }
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+#about-me,
+#gallery,
+#facebook {
+    border-style: none none solid none;
+    border-width: thin;
+
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: #222;
+}
+
+.fa-bars:before, .fa-navicon:before {
+    font-size: 30px;
 }
 
 /*Home*/

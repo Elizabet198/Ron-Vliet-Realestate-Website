@@ -1,4 +1,4 @@
-@media screen and (max-width: 2550px) {
+@media screen and (max-width: 2560px) {
     .home-overlay-text {
         font-size: 55px;
     }
@@ -41,7 +41,6 @@
     .facebook-text {
         font-size: 70px;
     }
-    
     
     .facebook-icon{
         height: 90px;
@@ -130,7 +129,7 @@
     }
 
     .footer-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .facebook-container {
@@ -330,7 +329,7 @@
 
 @media screen and (max-width: 550px) {
     .footer-text:last-child {
-        font-size: 10px;
+        font-size: 12px;
     }
     .container{
         padding: 3px;

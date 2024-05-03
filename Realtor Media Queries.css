@@ -457,6 +457,10 @@
 		width: auto;
 		height: 300px;
 	}
+
+    .grid{
+        gap: 0;
+    }
 }
 
 @media screen and (max-width: 450px) {

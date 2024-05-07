@@ -32,7 +32,7 @@
     }
 
     .footer-text {
-        font-size: 20px;
+        font-size: 27px;
     }
     .facebook-container {
         padding: 70px 300px;
@@ -368,6 +368,10 @@
       top: 0;
       position: sticky;
     }
+
+    .home-overlay-text{
+        color: #231e56;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -446,9 +450,6 @@
 @media screen and (max-width: 580px) {
     .facebook-text{
         font-size: 20px;
-    }
-    .home-overlay-text{
-        font-weight: 900;
     }
 }
 

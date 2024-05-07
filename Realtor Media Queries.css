@@ -1,3 +1,13 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --mid-black: rgb(34, 34, 34);
+    --grey: rgb(85, 85, 85);
+    --dark-grey: rgb(68, 68, 68);
+    --light-blue: rgb(41, 171, 226);
+    --dark-blue: rgb(0, 48, 53);
+}
+
+
 @media screen and (max-width: 2560px) {
     .home-overlay-text {
         font-size: 55px;
@@ -355,7 +365,7 @@
     }
 
     .home-overlay-text{
-        color: #231e56;
+        color: var(--dark-blue);
     }
 }
 

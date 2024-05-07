@@ -365,7 +365,7 @@
     }
 
     .home-overlay-text{
-        color: var(--dark-blue);
+       color: #000;
     }
 }
 

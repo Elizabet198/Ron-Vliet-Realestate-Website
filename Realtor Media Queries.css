@@ -343,21 +343,6 @@
 
 }
 
-
-/* @media screen and (max-width: 900px) {
-    .main-nav-list {
-        display: none;
-    }
-
-    .header {
-        padding: 10px 20px;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-} */
-
 @media (max-width: 900px) {
     .header {
       display: none;
@@ -409,12 +394,10 @@
 @media screen and (max-width: 700px) {
     .gallery-container {
         height: unset;
-        /* Remove fixed height on smaller screens */
     }
 
     .image-row {
         margin-bottom: 5px;
-        /* Add some spacing between rows */
     }
 
 	.home-overlay-text {

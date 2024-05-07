@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --white: rgb(255, 255, 255);
+    --mid-black: rgb(34, 34, 34);
+    --grey: rgb(85, 85, 85);
+    --dark-grey: rgb(68, 68, 68);
+    --light-blue: rgb(41, 171, 226);
+    --dark-blue: rgb(0, 48, 53);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,10 +23,10 @@ html {
 
 
 body {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: var(--grey);
     overflow-x: hidden;
 }
 
@@ -93,15 +105,15 @@ body {
 /*HELPER SETTING CLASSES*/
 
 .margin-right-sm {
-	  margin-right: 1.8rem !important;
+	margin-right: 1.8rem !important;
 }
 
 .margin-bottom-md{
-	  margin-bottom: 4.8rem !important;
+	margin-bottom: 4.8rem !important;
 }
 
 .center-text{
-	  text-align: center;
+	text-align: center;
 }
 
 /*NAVIGATION*/
@@ -112,7 +124,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--white);
     height: 125px;
     padding: 2px 20px 2px 20px;
     position: fixed;
@@ -140,7 +152,7 @@ body {
 .main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
-    color: #444;
+    color: var(--dark-grey);
     font-weight: 530;
     font-size: 20px;
     transition: all 0.3s;
@@ -159,29 +171,28 @@ body {
 
 .mobile-navigation{
 	display: none;
-    background-color: white;
-
+    background-color: var(--white);
 }
 
 .topnav {
-  overflow: hidden;
-  position: relative;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-  display: none;
+    display: none;
 }
 
 /* Style navigation menu links */
 .topnav a {
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  text-align: center;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
 }
 
 .mobile-navigation.sticky {
@@ -190,14 +201,14 @@ body {
     left: 0;
     width: 100%;
     z-index: 10; /* Ensure the sticky nav bar stays on top */
-  }
+}
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 20px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }
 
 #about-me,
@@ -205,19 +216,18 @@ body {
 #facebook {
     border-style: none none solid none;
     border-width: thin;
-
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  color: #222;
+    color: var(--mid-black);
 }
 
 .fa-bars:before, .fa-navicon:before {
     font-size: 30px;
 }
 
-/*Home*/
+/* Home */
 
 .home-image-container {
     position: relative;
@@ -233,16 +243,16 @@ body {
     position: absolute;
     top: 20%;
     left: 40%;
-    color: #003035;
+    color: var(--dark-blue);
     padding: 20px 30px;
     text-align: center;
     font-size: 35px;
     font-weight: 900;
-    font-family: Dancing Script;
+    font-family: "Dancing Script", cursive;
     box-sizing: border-box;
 }
 
-/*About Me*/
+/* About Me */
 
 .about-me {
     max-width: 10000px;
@@ -261,7 +271,7 @@ body {
 .me-p-text{
     font-size: 15px;
     line-height: 1.8;
-    color: #666;
+    color: var(--grey);
 }
 
 .disappear {
@@ -270,7 +280,7 @@ body {
     left: 50%
 }
 
-/*Gallery*/
+/* Gallery */
 
 .gallery-container {
     width: 80%;
@@ -290,7 +300,7 @@ body {
     width: 32%;
 }
 
-/*Facebook*/
+/* Facebook */
 
 .facebook-container {
     display: flex;
@@ -311,10 +321,10 @@ body {
 .facebook-icon{
     height: 65px;
 	width: 65px;
-    color: #555;
+    color: var(--grey);
 }
 
-/*Contact*/
+/* Contact */
 
 .sign-up {
     margin: 0;
@@ -381,7 +391,7 @@ label {
 }
 
 .submit-button {
-    background-color: #29abe2;
+    background-color: var(--light-blue);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -391,10 +401,10 @@ label {
 }
 
 .submit-button:hover {
-    background-color: #2189b5;
+    background-color: var(--light-blue);
 }
 
-/*Footer*/
+/* Footer */
 
 .footer-container {
     display: flex;

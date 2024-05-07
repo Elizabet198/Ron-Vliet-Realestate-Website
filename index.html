@@ -180,7 +180,7 @@
             <img src="Sign Up Pictures/portrait_placeholder.png" alt="Sign Up Image">
           </div>
           <div class="form-holder">
-            <form onsubmit="sendEmail()">
+            <form onsubmit="sendEmail(); reset(); return false;">
               <h1 class="sign-up-heding">Contact Me</h1>
               <div class="form-group">
                 <label class="lable" for="firstName">First Name:</label>
@@ -207,14 +207,30 @@
             <script src="https://smtpjs.com/v3/smtp.js"></script>
             <script>
               function sendEmail() {
+                  const firstName = document.getElementById("firstName");
+                  const lastName = document.getElementById("lastName");
+                  const email = document.getElementById("email")
+                  const phonenum = document.getElementById("phone")
+                  const message = document.getElementById("message")
+
+                  let ebody = `
+                  <b> First name: </b> ${firstName.value}
+                  <br/>
+                  <b> Last name: </b> ${lastName.value}
+                  <br/>
+                  <b> Email: </b> ${email.value}
+                  <br/>
+                  <b> Phone Number: </b> ${phonenum.value}
+                  <br/>
+                  <b> Description: </b> ${message.value}
+                  `
+
                   Email.send({
-                      Host : "smtp.elasticemail.com",
-                      Username : "username",
-                      Password : "password",
-                      To : 'them@website.com',
-                      From : "you@isp.com",
-                      Subject : "This is the subject",
-                      Body : "And this is the body"
+                    SecureToken : "b2eae82a-daab-4274-acf5-cfeacde298fd",
+                    To : 'testemailsender77@gmail.com',
+                    From : "testemailsender77@gmail.com",
+                    Subject : "Equiry",
+                    Body : ebody
                   }).then(
                     message => alert(message)
                   );

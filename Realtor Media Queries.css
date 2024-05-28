@@ -308,49 +308,12 @@
 
     .text-area {
         font-size: 13px;
-    }
-
-    .text-area {
         height: 45px;
     }
 
     .facebook-container {
         padding: 50px 90px;
     }
-}
-
-@media screen and (max-width: 800px) {
-    .footer-text:last-child {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .footer-text:last-child {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .footer-text:last-child {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .footer-text:last-child {
-        font-size: 12px;
-    }
-    .container{
-        padding: 3px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .footer-text:last-child {
-        font-size: 12px;
-    }
-
 }
 
 @media (max-width: 900px) {
@@ -365,7 +328,8 @@
     }
 
     .home-overlay-text{
-       color: #000;
+       color: #ffffff;
+       text-shadow: 0 0 3px #021627, 0 0 6px #158af7;
     }
 }
 
@@ -378,6 +342,12 @@
 
     .footer-container p:first-child {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-text:last-child {
+        font-size: 16px;
     }
 }
 
@@ -401,7 +371,11 @@
     }
 }
 
+
 @media screen and (max-width: 700px) {
+    .footer-text:last-child {
+        font-size: 14px;
+    }
     .gallery-container {
         height: unset;
     }
@@ -422,8 +396,13 @@
 	}
 }
 
+
 @media screen and (max-width: 600px) {
-	.disappear {
+    .footer-text:last-child {
+        font-size: 12px;
+    }
+
+    .disappear {
 		width: auto;
 		height: 350px;
 	}
@@ -438,6 +417,7 @@
 		padding: 0;
         font-size: 17px
     }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -446,8 +426,21 @@
     }
 }
 
+@media screen and (max-width: 550px) {
+    .footer-text:last-child {
+        font-size: 12px;
+    }
+    .container{
+        padding: 3px;
+    }
+}
+
 @media screen and (max-width: 500px) {
-	.disappear {
+    .footer-text:last-child {
+        font-size: 12px;
+    }
+
+    .disappear {
 		width: auto;
 		height: 300px;
 	}
@@ -455,6 +448,7 @@
     .grid{
         gap: 0;
     }
+
 }
 
 @media screen and (max-width: 450px) {

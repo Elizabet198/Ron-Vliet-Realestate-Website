@@ -239,7 +239,8 @@ body {
     position: absolute;
     top: 20%;
     left: 40%;
-    color: var(--dark-blue);
+    color: #ffffff;
+    text-shadow: 0 0 3px #063963, 0 0 6px #0f6ca7;    
     padding: 20px 30px;
     text-align: center;
     font-size: 35px;

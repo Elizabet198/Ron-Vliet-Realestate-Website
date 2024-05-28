@@ -405,12 +405,9 @@ label {
 
 /* Footer */
 
-.footer-container {
+.footer-text {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-}
-
-.footer-text #link-current {
     font-size: 20px;
 }

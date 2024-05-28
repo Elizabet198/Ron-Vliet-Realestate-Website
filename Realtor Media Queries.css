@@ -8,7 +8,7 @@
 }
 
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2550px) {
     .home-overlay-text {
         font-size: 55px;
     }
@@ -41,9 +41,6 @@
         height: 700px;
     }
 
-    .footer-text {
-        font-size: 27px;
-    }
     .facebook-container {
         padding: 70px 300px;
     }
@@ -57,6 +54,12 @@
         width: 90px;
     }
 
+    .footer-text {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 2000px) {
@@ -150,7 +153,6 @@
         font-size: 38px;
     }
     
-    
     .facebook-icon{
         height: 70px;
         width: 70px;
@@ -225,23 +227,18 @@
     .header {
         padding: 2px 150px 2px 150px;
     }
+    
     .facebook-container {
         padding: 50px 150px;
     }
- 
-}
 
-@media screen and (max-width: 1150px) {
-    .footer-container {
+    .footer-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px;
-    }
-
-    .footer-column:first-child {
-        margin-bottom: 10px;
+        text-align: center;
     }
 }
 
@@ -321,32 +318,20 @@
       display: none;
     }
     
-    .mobile-navigation{
+    .mobile-navigation {
       display: block;
       top: 0;
       position: sticky;
     }
 
-    .home-overlay-text{
+    .home-overlay-text {
        color: #ffffff;
        text-shadow: 0 0 3px #021627, 0 0 6px #158af7;
     }
 }
 
-@media screen and (max-width: 850px) {
-    .footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .footer-container p:first-child {
-        margin: 0;
-    }
-}
-
 @media screen and (max-width: 800px) {
-    .footer-text:last-child {
+    .footer-text {
         font-size: 16px;
     }
 }
@@ -373,7 +358,7 @@
 
 
 @media screen and (max-width: 700px) {
-    .footer-text:last-child {
+    .footer-text {
         font-size: 14px;
     }
     .gallery-container {
@@ -396,9 +381,8 @@
 	}
 }
 
-
 @media screen and (max-width: 600px) {
-    .footer-text:last-child {
+    .footer-text {
         font-size: 12px;
     }
 
@@ -421,48 +405,23 @@
 }
 
 @media screen and (max-width: 580px) {
-    .facebook-text{
+    .facebook-text {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 550px) {
-    .footer-text:last-child {
-        font-size: 12px;
-    }
-    .container{
-        padding: 3px;
-    }
-}
-
 @media screen and (max-width: 500px) {
-    .footer-text:last-child {
-        font-size: 12px;
-    }
-
     .disappear {
 		width: auto;
 		height: 300px;
 	}
 
-    .grid{
+    .grid {
         gap: 0;
     }
-
 }
 
 @media screen and (max-width: 450px) {
-	.footer-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	#footer-text-first-child {
-		margin-bottom: 10px;
-	}
-
 	.footer-text {
 		font-size: 16px;
 	}
@@ -472,21 +431,6 @@
 	.disappear {
 		width: auto;
 		height: 250px;
-	}
-
-	.footer-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.footer-text {
-		font-size: 16px;
-	}
-	
-	#footer-text-first-child {
-		margin-bottom: 10px;
 	}
 
 	.home-overlay-text {
@@ -517,10 +461,10 @@
 	.footer-text {
 		font-size: 14px;
 	}
-    .facebook-container{
+    .facebook-container {
         padding: 20px 20px;
     }
-    .home-overlay-text{
+    .home-overlay-text {
         margin: 0;
     }
 }
@@ -537,10 +481,6 @@
 	}
 
 	label {
-		font-size: 12px;
-	}
-
-	.footer-text {
 		font-size: 12px;
 	}
 }

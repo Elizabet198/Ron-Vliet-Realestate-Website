@@ -381,6 +381,12 @@
 	}
 }
 
+@media screen and (max-width: 612px) {
+    .form-holder{
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .footer-text {
         font-size: 12px;
